@@ -82,4 +82,4 @@ app.get('/previous', async (req,res)=>{
         res.status(500).json({err:e,data:null})
     }
 })
-app.listen(3000,function(){})
+app.listen(process.env.port,function(){})
