@@ -24,7 +24,7 @@ let T = require('./modal/transac.schema')
 
 
 app.get('/',(req,res)=>{
-    res.end("Welcome to shopro")
+    res.status(200).json({msg:"Welcome to shopro"})
 })
 
 //add products 
