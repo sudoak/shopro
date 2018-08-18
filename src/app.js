@@ -62,7 +62,7 @@ app.post('/submit',async (req,res)=>{
 
 app.get('/info/:pname', async (req,res)=>{
     try{
-        let o = await T.findOne({pname:req.params.pname})
+        let o = await P.findOne({pname:req.params.pname})
         res.status(200).json({err:null,data:o})    
     }catch(e){
         res.status(500).json({err:e,data:null})
